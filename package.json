@@ -1,0 +1,29 @@
+{
+  "name": "ab-test-library-vercel",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "run:local": "tsx src/cli/run.ts",
+    "cw:login": "tsx src/cli/cwLogin.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@upstash/redis": "^1.35.0",
+    "dotenv": "^16.4.7",
+    "google-auth-library": "^10.9.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.7",
+    "@vercel/node": "^5.0.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.8"
+  }
+}

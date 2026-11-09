@@ -1,0 +1,21 @@
+{
+  "crons": [
+    {
+      "path": "/api/run?pass=early",
+      "schedule": "0 2 * * *"
+    },
+    {
+      "path": "/api/run?pass=final",
+      "schedule": "30 6 * * *"
+    },
+    {
+      "path": "/api/run?pass=final",
+      "schedule": "30 8 * * *"
+    }
+  ],
+  "functions": {
+    "api/run.ts": {
+      "maxDuration": 300
+    }
+  }
+}

@@ -1,0 +1,12 @@
+node_modules
+.state
+.env*
+!.env.example
+*.csv
+.vercel
+dist
+# Never commit keys or tokens
+*service-account*.json
+credentials*.json
+*.pem
+*.key
