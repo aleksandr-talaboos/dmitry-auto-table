@@ -43,4 +43,3 @@ export function parentContext(campaignId: number, project: string, listed: Binom
   const routed = ancestors.size > 1;
   return { shares, routed, missing: !routed && parents.some(row => !cache.has(row.id)) };
 }
-
